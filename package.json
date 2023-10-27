@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-coding",
+  "version": "1.0.0",
+  "description": "Assignment 2",
+  "main": "index.js",
+  "scripts": {
+   "start" : "lite-server"
+
+  },
+  "author": "Gabriele Borges",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
