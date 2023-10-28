@@ -1,0 +1,75 @@
+/* Reset de Estilos Padrão do Navegador */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+    background-color: #F4D27E;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url(./assets/fonts/Montserrat/static/Montserrat-Medium.ttf)
+}
+
+.background {
+    display: flex;
+    width: 100vw;  /*Adding width with the size of the person's screen*/
+    flex-direction: column; /*Adding items as column*/
+    justify-content: center;
+
+}
+
+.firstBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.logoForFirstPage {
+    position: absolute;
+    width: 40rem;
+    top: 30%;
+}
+
+.firstBackgroundButtons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: #A00CE8;
+    top: 1rem; 
+    right: 3.5rem;
+    font-size: 2.7rem;
+    font-family: MontserratMedium;
+    gap: 60px;
+
+}
+
+.firstBackgroundButtons a {
+    border-radius: 15px;
+    border: 4px solid #A00CE8;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
