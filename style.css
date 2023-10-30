@@ -1,4 +1,4 @@
-/* Reset de Estilos Padrão do Navegador */
+/* Reset of Pattern styles in browser */
 body,
 h1,
 h2,
@@ -38,10 +38,12 @@ img {
 
 }
 
-.firstBackground {
+/*Use justify-content for horizontal position in flexbox*/
+
+.containerBackground {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;     
     position: relative;
 
 }
@@ -65,11 +67,106 @@ img {
 
 }
 
+/*Applying a descendant for firstBackgroundButtons*/
+
 .firstBackgroundButtons a {
-    border-radius: 15px;
+    border-radius: 15px;      /*Adding border-radius to make button container circular*/
     border: 4px solid #A00CE8;
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
 
+}
+
+/*Second Background*/
+
+.containerTitle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 12%;
+    
+}
+
+@font-face {
+    font-family: MuseoModernoLight;
+    src: url(./assets/fonts/MuseoModerno/static/MuseoModerno-ExtraLight.ttf);
+}
+.containerTitle h2 {
+    font-family: MuseoModernoLight;
+    color: #A00CE8;
+    font-size: 5rem;
+}
+
+.containerTitle img {
+    width: 18%;
+}
+
+.containerContentSecond {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 180px;
+    top: 35%;
+
+
+}
+
+.containerSon {
+    display: flex;
+    flex-direction:column;
+    width: 20%;
+    align-items: center;
+   
+
+}
+
+@font-face {
+    font-family: MontserratLight ;
+    src: url(./assets/fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+
+.containerSon h3{
+    font-family: MontserratLight;
+    color: #A00CE8;
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: MontserratRegular ;
+    src: url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+.containerSon p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: MontserratRegular;
+}
+
+
+.containerDev {
+    display: flex;
+    flex-direction:column;
+    width: 20%;
+    align-items: center;
+    gap: 10%;
+
+}
+
+
+.containerDev h3{
+    font-family: MontserratLight;
+    color: #A00CE8;
+    font-size: 2rem;
+}
+
+
+.containerDev p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: MontserratRegular;
 }
